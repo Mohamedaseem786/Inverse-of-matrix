@@ -1,42 +1,46 @@
 # Inverse-of-matrix
 
 ## AIM:
-To write a python program to find the inverse of a nested array.
+To write a python program to find inverse a matrix.
+
 ## ALGORITHM:
+
 ### Step 1:
-To import numpy as np
+Start python program.
 
 ### Step 2:
-Create a two list and entry the two matrix using for loop.
+Import numpy.Create two null lists.
 
 ### Step 3:
-Add the number in list1 and list1 added to list2.
+Get the parameters and the elements from the user using for loops.
 
 ### Step 4:
-Inverse the martrix.
+Inverse the matrix using linalg library.
 
 ### Step 5:
-Print the inverse of the matrix.
+End the program.
 
 
 
 ## PROGRAM:
 ```
 import numpy as np
+col=int(input())
+row=int(input())
 l1,l2=[],[]
-a,b=int(input()),int(input())
-for i in range(a):
-    for j in range(b):
-        num=int(input())
-        l1.append(num)
+for i in range (row):
+    for i in range (col):
+        l1.append(int(input()))
     l2.append(l1)
     l1=[]
 print(l2)
-value=np.array(l2)
-inverse=np.linalg.inv(value)
-print(inverse)
+print(np.linalg.inv(l2))
+
 ```
+
 ## OUTPUT:
-![](./inv.png)
+![myproject](1.png)
+
 ## RESULT:
-The above program is successfully find the inverse of the nested array.
+Thus python program to find inverse of matrix is done.
+
